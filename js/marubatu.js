@@ -20,8 +20,10 @@ var turnMan = firstMan;
 //ボタンを押したときの処理
 $(function() {
   $('.btn').click(function() {
-    //○×の記入
+    //所持数字の追加
     turnMan.obtained.push(parseInt(this.name));
+
+    //○×の記入
     var cover = document.createElement('img');
     cover.setAttribute('class', 'cover');
     cover.setAttribute('src', 'img/' + turnMan.color + '.jpg')
